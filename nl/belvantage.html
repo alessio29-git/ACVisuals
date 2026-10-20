@@ -1,0 +1,438 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Belvantage — UI/UX- &amp; codecase · acvisuals</title>
+<meta name="description" content="Belvantage, UI/UX-case door Cino Alessio: een gedeelde klantenkaart-app voor lokale winkels, van Figma-prototype (41 schermen, echte dark mode) tot werkende code (HTML/CSS/JS, echte QR-code en camerascanner).">
+<meta name="robots" content="index, follow">
+<meta name="color-scheme" content="light dark">
+<meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src https://fonts.gstatic.com; img-src 'self' data:; object-src 'none'; base-uri 'self'; form-action 'self';">
+<meta name="referrer" content="strict-origin-when-cross-origin">
+
+<link rel="canonical" href="https://alessio29-git.github.io/acvisuals/nl/belvantage.html">
+<meta property="og:title" content="Belvantage — UI/UX- &amp; codecase · acvisuals">
+<meta property="og:description" content="Belvantage: gedeelde klantenkaart-app voor lokale winkels, volledig Figma-prototype en werkende code, echte QR-code en camerascanner.">
+<meta property="og:type" content="article">
+<meta property="og:url" content="https://alessio29-git.github.io/acvisuals/nl/belvantage.html">
+<meta property="og:image" content="https://alessio29-git.github.io/acvisuals/img/og-logo.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Logo AC — acvisuals">
+<meta property="og:locale" content="nl_BE">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Belvantage — UI/UX- &amp; codecase · acvisuals">
+<meta name="twitter:description" content="Belvantage: gedeelde klantenkaart-app voor lokale winkels, volledig Figma-prototype en werkende code, echte QR-code en camerascanner.">
+<meta name="twitter:image" content="https://alessio29-git.github.io/acvisuals/img/og-logo.png">
+<meta name="theme-color" content="#ECEDE6" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#15161A" media="(prefers-color-scheme: dark)">
+
+<link rel="alternate" hreflang="fr" href="https://alessio29-git.github.io/acvisuals/belvantage.html">
+<link rel="alternate" hreflang="nl" href="https://alessio29-git.github.io/acvisuals/nl/belvantage.html">
+<link rel="alternate" hreflang="en" href="https://alessio29-git.github.io/acvisuals/en/belvantage.html">
+<link rel="alternate" hreflang="x-default" href="https://alessio29-git.github.io/acvisuals/belvantage.html">
+<link rel="icon" href="../favicon.svg" type="image/svg+xml">
+<script src="../intro.js"></script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300..700;1,9..144,300..600&family=Hanken+Grotesk:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://alessio29-git.github.io/acvisuals/nl/" },
+    { "@type": "ListItem", "position": 2, "name": "Projecten", "item": "https://alessio29-git.github.io/acvisuals/nl/#etudes-de-cas" },
+    { "@type": "ListItem", "position": 3, "name": "Belvantage" }
+  ]
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "CreativeWork",
+  "name": "Belvantage — gedeelde klantenkaart voor lokale winkels",
+  "description": "Belvantage: gedeelde klantenkaart-app voor lokale winkels, volledig Figma-prototype en werkende code, echte QR-code en camerascanner.",
+  "creator": { "@type": "Person", "name": "Cino Alessio" },
+  "image": "https://alessio29-git.github.io/acvisuals/img/fidelite-accueil.png",
+  "url": "https://alessio29-git.github.io/acvisuals/nl/belvantage.html"
+}
+</script>
+<link rel="stylesheet" href="../style.css">
+<style>
+  .breadcrumb { font-family: var(--font-mono); font-size: 0.78rem; color: var(--ink-muted); margin-bottom: 20px; }
+  .breadcrumb a { color: var(--ink-muted); text-decoration: none; border-bottom: 1px solid var(--line); }
+  .breadcrumb a:hover { color: var(--accent); border-color: var(--accent); }
+  .case-hero { padding: 48px 0 56px; border-top: none; }
+  .case-hero-meta { display: flex; flex-wrap: wrap; gap: 8px 28px; font-family: var(--font-mono); font-size: 0.8rem; color: var(--ink-muted); border-top: 1px solid var(--line); border-bottom: 1px solid var(--line); padding: 18px 0; margin: 28px 0; }
+  .case-hero-meta strong { color: var(--ink); display: block; font-family: var(--font-body); font-size: 0.95rem; margin-top: 2px; }
+  .case-actions { display: flex; gap: 14px; flex-wrap: wrap; margin-top: 8px; }
+  .shot { border: 1px solid var(--line); border-radius: var(--radius-md); overflow: hidden; background: var(--paper-raised); }
+  .shot img { width: 100%; height: auto; }
+  .shot-caption { font-family: var(--font-mono); font-size: 0.76rem; color: var(--ink-muted); padding: 12px 4px 0; }
+  .shot-row { display: grid; grid-template-columns: 1fr 1fr; gap: 24px; align-items: start; margin: 40px 0; }
+  .shot-row.single { grid-template-columns: minmax(0, 420px); justify-content: center; }
+  .step-block { display: grid; grid-template-columns: 64px 1fr; gap: 24px; padding: 36px 0; border-bottom: 1px solid var(--line); }
+  .step-block:first-child { padding-top: 0; }
+  .step-num { font-family: var(--font-display); font-style: italic; font-size: 2rem; color: var(--accent); }
+  .step-block h3 { font-size: 1.25rem; font-style: italic; font-weight: 500; margin-bottom: 10px; }
+  .next-project { display: flex; justify-content: space-between; align-items: center; gap: 16px; flex-wrap: wrap; padding: 40px 0; }
+  .pivot-box { display:flex; flex-wrap:wrap; gap:16px; margin:20px 0; }
+  .pivot-col { flex:1; min-width:220px; border:1px solid var(--line); border-radius:var(--radius-md); padding:18px 20px; }
+  .pivot-col.after { border-color: var(--accent); }
+  .pivot-label { font-family:var(--font-mono); font-size:0.72rem; text-transform:uppercase; letter-spacing:0.05em; color: var(--ink-muted); margin-bottom:8px; display:block; }
+  @media (max-width: 720px) {
+    .shot-row { grid-template-columns: 1fr; }
+    .step-block { grid-template-columns: 1fr; gap: 8px; }
+  }
+</style>
+</head>
+<body>
+
+<a class="skip-link" href="#main">Naar de hoofdinhoud</a>
+
+<header class="site-header" id="siteHeader">
+  <div class="container header-inner">
+    <a href="index.html" class="logo" aria-label="acvisuals — terug naar de homepage">
+      <img src="../img/ac-logo.png" width="573" height="468" class="logo-mark" alt="">
+      <span class="logo-word" aria-hidden="true">acvisuals</span>
+    </a>
+
+    <nav class="main-nav" id="mainNav" aria-label="Hoofdnavigatie">
+      <ul>
+        <li><a href="index.html#services" class="nav-link">Diensten</a></li>
+        <li><a href="index.html#etudes-de-cas" class="nav-link">Projecten</a></li>
+        <li><a href="index.html#methode" class="nav-link">Werkwijze</a></li>
+        <li><a href="index.html#personnalite" class="nav-link">Over mij</a></li>
+        <li><a href="index.html#faq" class="nav-link">Vragen</a></li>
+        <li><a href="index.html#contact" class="nav-link">Contact</a></li>
+        <li class="nav-lang" aria-label="Langue · Taal · Language">
+          <a href="../belvantage.html" hreflang="fr" lang="fr" title="Français">FR</a>
+          <a href="belvantage.html" hreflang="nl" lang="nl" aria-current="page" title="Nederlands">NL</a>
+          <a href="../en/belvantage.html" hreflang="en" lang="en" title="English">EN</a>
+        </li>
+      </ul>
+    </nav>
+
+    <div class="header-actions">
+      <nav class="lang-switch" aria-label="Langue · Taal · Language">
+        <a href="../belvantage.html" hreflang="fr" lang="fr" title="Français">FR</a>
+        <a href="belvantage.html" hreflang="nl" lang="nl" aria-current="page" title="Nederlands">NL</a>
+        <a href="../en/belvantage.html" hreflang="en" lang="en" title="English">EN</a>
+      </nav>
+      <button type="button" class="theme-toggle" id="themeToggle" aria-label="Donker thema activeren" aria-pressed="false">
+        <svg class="icon-sun" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"/></svg>
+        <svg class="icon-moon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8Z"/></svg>
+      </button>
+      <a href="tel:+32485037294" class="header-call" aria-label="Bel Cino Alessio op +32 485 03 72 94">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1.9.4 1.8.7 2.7a2 2 0 0 1-.5 2.1L8 9.8a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.7.7a2 2 0 0 1 1.7 2z"/></svg>
+        <span class="header-call-num">+32 485 03 72 94</span>
+      </a>
+      <a href="index.html#contact" class="btn btn-primary btn-small">Contact opnemen</a>
+      <button type="button" class="menu-toggle" id="menuToggle" aria-label="Menu openen" aria-expanded="false" aria-controls="mainNav">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </div>
+</header>
+
+<main id="main">
+
+  <section class="section case-hero" aria-labelledby="case-title">
+    <div class="container">
+      <p class="breadcrumb"><a href="index.html">Home</a> / <a href="index.html#etudes-de-cas">Projecten</a> / Belvantage</p>
+
+      <span class="case-tag">Lokale handel · Figma-prototype + werkende code, mobiel</span>
+      <h1 id="case-title" class="section-title" style="max-width:20ch; font-size:clamp(2rem,4vw,3rem);">Belvantage — een gedeelde klantenkaart voor buurtwinkels</h1>
+      <p class="hero-lede" style="max-width:65ch; font-size:1.1rem;">
+        Een eenvoudige vaststelling: een kleine zelfstandige winkel heeft noch het budget noch de tijd om een
+        eigen klantenkaart-app te laten bouwen, en de klanten eindigen met een stapel kartonnen kaartjes die
+        ze verliezen. Belvantage biedt één gedeelde app — elke klant spaart punten bij verschillende winkels,
+        elke handelaar scant een QR-code om punten toe te kennen, zonder zelf iets te ontwikkelen.
+      </p>
+
+      <div class="case-actions">
+        <a class="btn btn-primary" href="https://www.figma.com/design/FpHQ26TAcnUqean6JJVn6l/App-Fid%C3%A9lit%C3%A9-Locale?node-id=2-16&t=nJcHRwKrs1C71wnm-0" target="_blank" rel="noopener noreferrer">Bekijk het prototype in Figma</a>
+        <a class="btn btn-ghost" href="../dossier/App-Fidelite-Locale-Dossier-UXUI.pdf" target="_blank" rel="noopener noreferrer">Download het UX/UI-dossier (pdf, in het Frans)</a>
+        <a class="btn btn-ghost" href="index.html#etudes-de-cas">← Terug naar de projecten</a>
+      </div>
+
+      <div class="case-hero-meta">
+        <span>Rol<strong>UI/UX Designer &amp; Developer</strong></span>
+        <span>Context<strong>Persoonlijk project</strong></span>
+        <span>Tools<strong>Figma, HTML/CSS/JS</strong></span>
+        <span>Omvang<strong>41 Figma-schermen · 20 gecodeerde pagina's</strong></span>
+        <span>Status<strong>Prototype + werkende code, zonder back-end</strong></span>
+      </div>
+
+      <div class="shot-row">
+        <div class="shot">
+          <img src="../img/fidelite-accueil.png" width="420" height="900" alt="Startscherm van de app aan klantzijde: puntensaldo, klantenkaart van de hoofdwinkel, lijst met gevolgde winkels">
+        </div>
+        <div class="shot">
+          <img src="../img/fidelite-dashboard.png" width="420" height="900" alt="Dashboard aan handelaarszijde: statistieken (actieve klanten, toegekende punten), filters per periode, knop om een klant te scannen">
+        </div>
+      </div>
+      <p class="shot-caption" style="margin-top:-24px; margin-bottom:32px;">Twee verschillende ervaringen in één app: de klantflow (links) en de handelaarsflow (rechts).</p>
+    </div>
+  </section>
+
+  <section class="section section-alt" aria-labelledby="demarche-title">
+    <div class="container">
+      <p class="section-eyebrow">De aanpak</p>
+      <h2 id="demarche-title" class="section-title">Van afbakening tot code, met één beslissing die onderweg alles veranderde</h2>
+
+      <div class="step-block">
+        <span class="step-num">01</span>
+        <div>
+          <h3>Afbakening</h3>
+          <p>Het product behoort tot geen enkele winkel in het bijzonder: het is een gedeeld platform voor elke lokale zaak — bakkerij, café, instituut, ambachtsman. Twee profielen met tegengestelde behoeften: de klant die zonder gedoe punten wil sparen, en de handelaar die klanten wil binden zonder iets te ontwikkelen.</p>
+        </div>
+      </div>
+
+      <div class="step-block">
+        <span class="step-num">02</span>
+        <div>
+          <h3>De omschakeling naar QR-code</h3>
+          <p>De eerste versie van de validatieflow steunde enkel op een 4-cijferige code die de handelaar mondeling doorgaf — functioneel, maar met wrijving. Een benchmark van Starbucks Rewards bevestigde dat een mechanisme "scan de QR, de punten worden automatisch toegevoegd" die wrijving voor iedereen verminderde, niet alleen voor technofielen. De QR-code werd de hoofdflow; de 4-cijferige code blijft beschikbaar als noodoplossing en werd nooit geschrapt.</p>
+        </div>
+      </div>
+
+      <div class="shot-row single">
+        <div class="shot">
+          <img src="../img/fidelite-qrcode.png" width="420" height="900" loading="lazy" decoding="async" alt="Scherm Mijn QR-code aan klantzijde: echte QR-code gegenereerd in JavaScript met de unieke klant-ID, met een noodlink naar handmatige invoer">
+        </div>
+      </div>
+      <p class="shot-caption" style="text-align:center; margin-top:-16px; margin-bottom:32px;">De echte QR-code, gegenereerd aan klantzijde — elke persoon heeft een unieke, vaste code, naar het model van een Basic-Fit-lidkaart.</p>
+
+      <div class="step-block">
+        <span class="step-num">03</span>
+        <div>
+          <h3>Twee flows, één design system</h3>
+          <p>In plaats van twee aparte projecten voedt één Design System (kleuren, typografie, componenten) beide ervaringen. Het handelaarsdashboard moest vooral geloofwaardig zijn voor een echte zelfstandige: filters voor 7/30/90 dagen met echt verschillende gegevens per periode, en de hoofdactie ("Klant scannen") goed zichtbaar in plaats van verstopt in een menu.</p>
+        </div>
+      </div>
+
+      <div class="step-block">
+        <span class="step-num">04</span>
+        <div>
+          <h3>Een echte dark mode, geen laagje verf</h3>
+          <p>Eerste naïeve poging: elk scherm in een donkere versie dupliceren — al snel onbeheersbaar en niet de juiste werkwijze. De goede oplossing zat in het ingebouwde mechanisme van Figma (<code>SET_VARIABLE_MODE</code>): één set schermen, één schakelaar die meteen alle aan variabelen gekoppelde kleuren omzet — zonder duplicatie. In de code identiek nagebouwd met één globale CSS-klasse.</p>
+        </div>
+      </div>
+
+      <div class="shot-row single">
+        <div class="shot">
+          <img src="../img/fidelite-darkmode.png" width="420" height="900" loading="lazy" decoding="async" alt="Startscherm in dark mode: zeer donkergrijze achtergrond, iets lichtere kaarten voor visuele hiërarchie, nooit puur zwart">
+        </div>
+      </div>
+      <p class="shot-caption" style="text-align:center; margin-top:-16px; margin-bottom:32px;">Echte dark mode — achtergrond en vlakken volgen de Material Design-richtlijnen (vlakken lichter dan de achtergrond, nooit puur zwart).</p>
+
+      <div class="step-block">
+        <span class="step-num">05</span>
+        <div>
+          <h3>Van Figma naar werkende code</h3>
+          <p>Na het Figma-prototype ging het project over naar pure HTML/CSS/JS — bewust zonder framework, zodat het leesbaar en aanpasbaar blijft zonder complexe tools. De QR-code en de camerascanner van de handelaar werken echt: toegang tot de camera van de browser, beelddecodering in real time, alles in native JavaScript.</p>
+        </div>
+      </div>
+
+      <div class="shot-row single">
+        <div class="shot">
+          <img src="../img/fidelite-scanner.png" width="420" height="900" loading="lazy" decoding="async" alt="Scannerscherm aan handelaarszijde: echte camerabeelden in de browser, richtkader voor de QR-code, zaklampknop en link naar handmatige invoer">
+        </div>
+      </div>
+      <p class="shot-caption" style="text-align:center; margin-top:-16px; margin-bottom:32px;">De scanner gebruikt de echte camera van de browser (<code>getUserMedia</code>) — geen visuele simulatie.</p>
+    </div>
+  </section>
+
+  <section class="section" aria-labelledby="visual-title">
+    <div class="container">
+      <p class="section-eyebrow">Visueel ontwerp</p>
+      <h2 id="visual-title" class="section-title">Een Design System gebouwd om hergebruikt te worden</h2>
+      <p class="section-lede">32 componenten met varianten, gedocumenteerd in Figma, en een iconensysteem dat 1:1 overeenkomt met de opensourcebibliotheek Lucide, voor een directe overdracht naar de code.</p>
+
+      <div class="tabs" data-tabs>
+        <div class="tab-list" role="tablist" aria-label="Aspecten van het visuele ontwerp">
+          <button class="tab-btn is-active" role="tab" id="tab-wireframe" aria-controls="panel-wireframe" aria-selected="true">Beloningen</button>
+          <button class="tab-btn" role="tab" id="tab-mockup" aria-controls="panel-mockup" aria-selected="false" tabindex="-1">Toegankelijkheid</button>
+          <button class="tab-btn" role="tab" id="tab-system" aria-controls="panel-system" aria-selected="false" tabindex="-1">Design system</button>
+        </div>
+
+        <div class="tab-panel is-active" id="panel-wireframe" role="tabpanel" aria-labelledby="tab-wireframe">
+          <div class="shot-row single">
+            <div class="shot">
+              <img src="../img/fidelite-recompenses.png" width="420" height="900" loading="lazy" decoding="async" alt="Scherm Mijn beloningen: twee beschikbare beloningen, één vergrendeld met de melding dat er nog 40 punten ontbreken, geschiedenis van inwisselingen">
+            </div>
+          </div>
+          <p class="visual-caption">Bewust onderscheid tussen een beschikbare beloning, een vergrendelde (met het aantal ontbrekende punten) en een al ingewisselde.</p>
+        </div>
+
+        <div class="tab-panel" id="panel-mockup" role="tabpanel" aria-labelledby="tab-mockup" hidden>
+          <div class="system-grid">
+            <div class="swatch-group">
+              <span class="swatch" style="background:#111827">16.3:1</span>
+              <span class="swatch" style="background:#DC2626">4.8:1</span>
+              <span class="swatch swatch-light" style="background:#F59E0B; color:#111;">8.3:1</span>
+            </div>
+          </div>
+          <p class="visual-caption">Er werd een echte WCAG-contrastaudit uitgevoerd op de belangrijkste kleurparen — er werd ook een fout gevonden (witte tekst op een oranje badge, 2,15:1, niet conform) en meteen tijdens de audit gecorrigeerd.</p>
+        </div>
+
+        <div class="tab-panel" id="panel-system" role="tabpanel" aria-labelledby="tab-system" hidden>
+          <div class="system-grid">
+            <div class="swatch-group">
+              <span class="swatch" style="background:#2563EB">Primary Blue</span>
+              <span class="swatch" style="background:#F59E0B">Accent Orange</span>
+              <span class="swatch" style="background:#111827">Neutral 900</span>
+              <span class="swatch swatch-light" style="background:#F7F8FA">Background</span>
+            </div>
+            <div class="type-scale">
+              <p class="ts-display">Titel — Inter 800</p>
+              <p class="ts-body">Lopende tekst — Inter, 14–16px</p>
+              <p class="ts-mono">LABELS &amp; BADGES — Inter Semi Bold</p>
+            </div>
+            <div class="component-row">
+              <button class="btn btn-primary" type="button" disabled>Primaire knop</button>
+              <button class="btn btn-ghost" type="button" disabled>Secundaire knop</button>
+              <span class="badge">Badge</span>
+            </div>
+          </div>
+          <p class="visual-caption">Uittreksel uit het Design System: kleurenpalet, typografische schaal en componenten — dezelfde variabelen sturen de lichte en de donkere modus.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section section-alt" aria-labelledby="research-title">
+    <div class="container">
+      <p class="section-eyebrow">Onderzoek &amp; benchmark</p>
+      <h2 id="research-title" class="section-title">Eerlijk onderzoek in plaats van een nepenquête</h2>
+      <p class="section-lede">Zonder echte klant of gebruikerspanel voor dit persoonlijke project steunt het onderzoek op openbare secundaire gegevens en een echte concurrentiebenchmark — niet op verzonnen statistieken.</p>
+
+      <div class="research-grid">
+        <div class="research-card">
+          <p class="research-label">Secundaire gegevens</p>
+          <h3>Fidme-barometer 2024</h3>
+          <p>Een gezin heeft gemiddeld 16 klantenkaarten maar gebruikt er slechts 2 per week — het vertrekpunt dat een gedeelde app verantwoordt in plaats van nog een kaart erbij.</p>
+        </div>
+        <div class="research-card">
+          <p class="research-label">Directe concurrent</p>
+          <h3>Fidme</h3>
+          <p>Digitaliseert bestaande klantenkaarten. Lost het probleem niet op van de handelaar die geen digitaal programma heeft om te digitaliseren — de blinde vlek die dit project invult.</p>
+        </div>
+        <div class="research-card">
+          <p class="research-label">Inspiratie buiten de sector</p>
+          <h3>Too Good To Go</h3>
+          <p>Principe van wrijvingsloze, geolokaliseerde ontdekking, overgenomen voor het Ontdek-scherm van het project.</p>
+        </div>
+        <div class="research-card">
+          <p class="research-label">Inspiratie buiten de sector</p>
+          <h3>Starbucks Rewards</h3>
+          <p>"Scan je QR-code aan de kassa" — precies het mechanisme dat gekozen werd als hoofdflow om punten te valideren.</p>
+        </div>
+      </div>
+
+      <div class="pivot-box">
+        <div class="pivot-col">
+          <span class="pivot-label">Voor</span>
+          Enkel een 4-cijferige code, mondeling doorgegeven tussen klant en handelaar.
+        </div>
+        <div class="pivot-col after">
+          <span class="pivot-label">Na</span>
+          QR-code als hoofdflow, handmatige code behouden als vangnet.
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" aria-labelledby="interaction-title">
+    <div class="container">
+      <p class="section-eyebrow">Interactieontwerp</p>
+      <h2 id="interaction-title" class="section-title">Micro-interacties die getest zijn, niet alleen getekend</h2>
+      <p class="section-lede">Een systematische audit van het prototype bracht echte fouten aan het licht vóór ze in de code terechtkwamen: knoppen zonder bestemming, schermen zonder terugweg, gevoelige acties zonder bevestiging.</p>
+
+      <div class="interaction-demos">
+
+        <div class="demo-card">
+          <h3>Bevestiging vóór een gevoelige actie</h3>
+          <p>Een beloning inwisselen of uitloggen gebeurde met één tik — aan beide werd een bevestigingsstap toegevoegd die je kunt annuleren.</p>
+          <button class="demo-btn" id="demoLikeBtn" type="button" aria-pressed="false">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 9V5a3 3 0 0 0-3-3l-4 9v11h11.28a2 2 0 0 0 2-1.7l1.38-9a2 2 0 0 0-2-2.3H14Z"/><path d="M7 22H4a2 2 0 0 1-2-2v-7a2 2 0 0 1 2-2h3"/></svg>
+            <span id="demoLikeLabel" data-off="Inwisselen" data-on="Ingewisseld!">Inwisselen</span>
+          </button>
+        </div>
+
+        <div class="demo-card">
+          <h3>Handmatige code invoeren</h3>
+          <p>Noodoplossing als de QR-code niet werkt — validatie in real time, nooit voorgesteld als standaardflow.</p>
+          <label for="demoCode" class="demo-label">Code van 4 cijfers</label>
+          <input type="text" id="demoCode" class="demo-input" inputmode="numeric" pattern="[0-9]*" maxlength="4" placeholder="4832" aria-describedby="demoCodeHint">
+          <p id="demoCodeHint" class="demo-hint" aria-live="polite">Vul een code van 4 cijfers in om de live validatie te zien.</p>
+        </div>
+
+        <div class="demo-card">
+          <h3>Schakelaar dark mode</h3>
+          <p>Het echte component van de profielschermen — zichtbare status, duidelijk label, volledige toetsenbordondersteuning.</p>
+          <div class="demo-switch-row">
+            <span id="switchLabel">Donkere modus</span>
+            <button type="button" class="switch" id="demoSwitch" role="switch" aria-checked="false" aria-labelledby="switchLabel">
+              <span class="switch-knob"></span>
+            </button>
+          </div>
+        </div>
+
+        <div class="demo-card">
+          <h3>Bezig met valideren</h3>
+          <p>Laadscherm van de scanner — gaat na korte tijd automatisch naar het volgende scherm, nooit een doodlopende weg.</p>
+          <button class="btn btn-ghost btn-small" id="demoLoadBtn" type="button">Start de demo</button>
+          <div class="demo-progress" role="progressbar" aria-valuemin="0" aria-valuemax="100" aria-valuenow="0" id="demoProgress">
+            <div class="demo-progress-bar" id="demoProgressBar"></div>
+          </div>
+          <p class="demo-progress-status" id="demoProgressStatus" aria-live="polite">Klaar om te starten.</p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <section class="section section-alt" aria-labelledby="suite-title">
+    <div class="container">
+      <p class="section-eyebrow">En verder</p>
+      <h2 id="suite-title" class="section-title">Volgende stap: een echte database</h2>
+      <p class="section-lede">De code werkt met fictieve gegevens die in de browser bewaard worden — elke QR-code-ID is uniek en vast, maar nog niets wordt tussen toestellen gedeeld. Wat volgt: een echte database (Supabase) koppelen voor echte gebruikersaccounts, en de netwerkfoutschermen toevoegen die al in het Figma-prototype ontworpen zijn maar nog niet gecodeerd.</p>
+
+      <div class="protocol-block" style="margin-bottom:32px;">
+        <h3>Een concept dat openstaat voor gesprek</h3>
+        <p>Belvantage is een persoonlijk project — een volledig concept, van Figma-prototype tot werkende code, maar het behoort tot geen enkele winkel en is (nog) geen gelanceerd commercieel product. Bent u een winkel, een bedrijf of een projectdrager die interesse heeft in dit idee — overname, licentie of samenwerking om het samen verder te ontwikkelen — <a href="index.html#contact" style="color:var(--accent); text-decoration:underline;">neem gerust contact op</a> om erover te praten.</p>
+      </div>
+
+      <div class="next-project">
+        <a class="btn btn-ghost" href="index.html#etudes-de-cas">← Terug naar de projecten</a>
+        <a class="btn btn-primary" href="index.html#contact">Een gelijkaardig project bespreken</a>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="container footer-inner">
+    <p>© <span id="year"></span> acvisuals — Cino Alessio. Alle rechten voorbehouden.</p>
+    <p class="colophon">België — Brussel.</p>
+    <a href="mentions-legales.html" class="footer-legal">Juridische informatie &amp; privacy</a>
+    <a href="index.html#top" class="back-to-top">Terug naar de homepage ↑</a>
+  </div>
+</footer>
+
+<a href="https://wa.me/32485037294?text=Hallo%20Cino%2C%20ik%20contacteer%20u%20via%20uw%20website%20over%20een%20project." class="wa-float" target="_blank" rel="noopener noreferrer" aria-label="Stuur Cino Alessio een bericht via WhatsApp">
+  <svg width="28" height="28" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/></svg>
+  <span class="wa-float-label">Stuur me een WhatsApp</span>
+</a>
+
+<button type="button" class="scroll-top-btn" id="scrollTopBtn" aria-label="Terug naar boven">
+  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 19V5M5 12l7-7 7 7"/></svg>
+</button>
+
+<script src="../script.js"></script>
+</body>
+</html>
