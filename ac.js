@@ -1,4 +1,4 @@
-/* acvisuals — interactions (menu, apparitions, formulaire). Aucun outil externe. */
+/* ACVisuals — interactions (menu, apparitions, formulaire). Aucun outil externe. */
 (function () {
   'use strict';
   var doc = document.documentElement;
