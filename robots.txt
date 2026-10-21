@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://alessio29-git.github.io/acvisuals/sitemap.xml
+Sitemap: https://alessio29-git.github.io/ACVisuals/sitemap.xml
